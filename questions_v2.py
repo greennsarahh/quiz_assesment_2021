@@ -1,5 +1,5 @@
 # variables
-
+score = 0
 # Ask user questions/ main routine
 def ask(question, answer):
     i = int(input(question))
@@ -8,7 +8,6 @@ def ask(question, answer):
         score += 1
     else:
         print("Sorry that is incorrect, the correct answer is {}.".format(answer))
-
 
 #** Main Routine ***
 score = 0
