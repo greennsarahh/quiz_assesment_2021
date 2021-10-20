@@ -13,6 +13,7 @@ def ask(question):
 
 
 #** Main Routine ***
+# ask a question
 score = 0
 q1 = ask("How many legs does a spider have?")
 if q1 == 8:
