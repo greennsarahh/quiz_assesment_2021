@@ -23,8 +23,8 @@ def yes_no(questions):
 
         elif response == "no" or response == "n":
              response = "no"
-             print("in this game the questions will be short and you will have to answer with a integer, "
-             "there will be six questions. Good luck!")
+             print("""in this game the questions will be short and you will have to answer with a integer, 
+             there will be six questions. You will be able to earn 6 points! Good luck!""")
              return response
 
         else:
