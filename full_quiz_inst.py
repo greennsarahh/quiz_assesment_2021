@@ -30,6 +30,23 @@ def yes_no(questions):
         else:
             print("please answer yes / no")
 
+
+def statement_generator(statement, decoration):
+
+    sides = decoration * 3
+
+
+    statement = "{} {} {}".format(sides, statement, sides)
+    top_bottom = decoration * len(statement)
+
+    print(top_bottom)
+    print(statement)
+    print(top_bottom)
+
+    return ""
+
+statement_generator("Welcome to the game", "*")
+print()
 # main routine goes here
 show_instructions = yes_no("Have you played this game before?")
 print("You chose {}" .format(show_instructions))
@@ -89,6 +106,9 @@ if score >= 6:
 elif score <= 5:
     print("You got {} out of 6. better luck next time. ".format(score))
 
-print("Thank you for playing")
+
+statement_generator("Thank you for playing", "!")
+print()
+
 
 
